@@ -41,6 +41,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\b(override)\b</string>
+			<key>name</key>
+			<string>keyword.modifier.method.c++</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\b(private:|protected:|public:)</string>
 			<key>name</key>
 			<string>storage.modifier.c++</string>
@@ -85,7 +91,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(and|and_eq|bitand|bitor|compl|not|not_eq|or|or_eq|typeid|xor|xor_eq)\b</string>
+			<string>\b(and|and_eq|bitand|bitor|compl|not|not_eq|or|or_eq|typeid|xor|xor_eq|decltype)\b</string>
 			<key>name</key>
 			<string>keyword.operator.c++</string>
 		</dict>
