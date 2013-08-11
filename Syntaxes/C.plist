@@ -591,6 +591,11 @@
 				<key>3</key>
 				<dict>
 					<key>name</key>
+					<string>support.function.any-method.c</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
 					<string>punctuation.definition.parameters.c</string>
 				</dict>
 			</dict>
@@ -598,10 +603,10 @@
 			<string>(?x) (?: (?= \s )  (?:(?&lt;=else|new|return) | (?&lt;!\w)) (\s+))?
 			(\b 
 				(?!(while|for|do|if|else|switch|catch|enumerate|return|sizeof|[cr]?iterate)\s*\()(?:(?!NS)[A-Za-z_][A-Za-z0-9_]*+\b | :: )++                  # actual name
-			)
+			(?:&lt;(?:[A-Za-z_\s,&amp;0-9]+|(?:&lt;[A-Za-z_\s,&amp;]&gt;))&gt;)?)
 			 \s*(\()</string>
 			<key>name</key>
-			<string>meta.function-call.c</string>
+			<string>meta.foo.function-call.c</string>
 		</dict>
 		<key>comments</key>
 		<dict>
