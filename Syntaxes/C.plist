@@ -637,6 +637,8 @@
 							<string>punctuation.definition.comment.begin.c</string>
 						</dict>
 					</dict>
+					<key>contentName</key>
+					<string>comment.block.body.c</string>
 					<key>end</key>
 					<string>\*/</string>
 					<key>endCaptures</key>
