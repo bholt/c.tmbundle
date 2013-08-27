@@ -34,6 +34,25 @@
 			<string>source.c</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.modifier.foo.c++</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.foo.c++</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\b(friend)\b\s+\b(class)\b</string>
+			<key>name</key>
+			<string>meta.friend-class.c++</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>\b(friend|explicit|virtual)\b</string>
 			<key>name</key>
