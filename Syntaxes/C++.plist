@@ -97,10 +97,45 @@
 			<string>variable.language.c++</string>
 		</dict>
 		<dict>
-			<key>match</key>
-			<string>\btemplate\b\s*</string>
+			<key>begin</key>
+			<string>\b(template)\b\s*&lt;</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.template.c++</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>&gt;</string>
 			<key>name</key>
-			<string>storage.type.template.c++</string>
+			<string>meta.keyword.template.c++</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>storage.type.foo.c++</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>\b(class)\b\s+\w+</string>
+					<key>name</key>
+					<string>meta.unmatching.class-struct-block.c++</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#angle_brackets</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>$base</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>match</key>
